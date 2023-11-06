@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+/* logo - search - login - cart */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* logo */
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* kích thước logo */
+.logo_fashion {
+    width: 180px;
+    height: 70px;
+}
+
+/* search */
+.search-box {
+    flex: 2;
+}
+
+.search-text {
+    width: 630px;
+    height: 37px;
+    font-size: 20px;
+}
+
+.btn-search {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* icon button */
+.login-icon {
+    flex: 1;
+}
+
+/* CSS cho danh sách ul */
+.button-icon {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.button-icon li {
+    margin: 0 20px;
+}
+
+.button-icon li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+}
+
+.button-icon li i {
+    margin-right: 7px;
+    font-size: 24px;
+}
+
+.button-icon li i,
+.button-icon li a {
+    display: block;
+}
+
+.button-icon li i {
+    margin-bottom: 8px;
+}
+
+
+
+/* menu - thanh điều hướng */
+.header-container{
+    background-color: black;
+}
+.header-container.sticky {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 100;
+    border-bottom: 1px solid black;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+}
+
+/* menu chính */
+.main-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li a {
+    color: white;
+    display: block;
+    padding: 18px 30px;
+    text-decoration: none;
+}
+
+/* menu con */
+/* li phải relative để làm chuẩn */
+.main-menu.item li a {
+    position: relative;
+}
+
+.main-menu ul.sub-menu {
+    position: absolute;
+    background-color: black;
+    padding: 1px 0;
+    list-style: none;
+    width: 180px;
+    border: 1px solid #434343;
+    display: none;
+}
+
+.main-menu ul.sub-menu a {
+    padding: 8px 20px;
+    border-bottom: 1px solid #434343;
+}
+
+.main-menu ul.sub-menu li:hover {
+    background-color: #5c5c5c;
+}
+
+/* làm cho menu con xuất hiện ra khi đưa chuột vào */
+.main-menu li:hover ul.sub-menu {
+    display: block;
+    z-index: 900;
+}
+
+/* Thiết lập border khi hover */
+.main-menu li a {
+    position: relative;
+}
+
+/* > để chỉ vào thẻ li ở menu đầu tiên */
+.main-menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* khi hover chuột vào li sẽ tác động vào before */
+.main-menu li:hover a::before {
+    width: 100%;
+}
+
+/* thêm icon tác động vào các thẻ li mang class has-child */
+.has-child {
+    position: relative;
+}
+
+.has-child i {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 20px 10px;
+    cursor: pointer;
+}
