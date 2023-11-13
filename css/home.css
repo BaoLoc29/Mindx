@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+.small--hide{
+    margin-bottom: 0 !important;
+}
 
 .slider-container {
     width: 1300px;
@@ -81,7 +84,7 @@
 }
 .grid-uniform{
     width: 1200px;
-    height: 133px;
+    height: 100px;
     color: black;
     background-color: white;
     margin: 0 auto;
@@ -91,7 +94,7 @@
     float: left;
 }
 .home-policy .policy-item .policy-desc {
-    padding-left: 60px;
+    padding-left: 55px;
 }
 .tit{
     font-weight: bold;
@@ -100,6 +103,8 @@
 
 /* product */
 .title{
+    font-weight: bold;
+    text-align: center;
     margin: 30px auto;
     border-bottom: 1px solid black;
     width: 250px;
@@ -140,7 +145,7 @@
 }
 .product-price{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: bold;
@@ -153,24 +158,16 @@
     justify-content: space-around;
 }
 .olw-item .product-button-hine{
-    display: none;
+    display: block
 }
 .olw-item:hover .product-button-hine{
     display: block;
 }
-
+/* 
 .btn-dark{
     margin: 0 0 10px 0;
     padding: 8px;
     background-color: black;
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-}
-.btn-primary{
-    padding: 8px;
-    background-color: red;
     color: white;
     cursor: pointer;
     border: none;

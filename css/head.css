@@ -31,25 +31,27 @@ body {
     flex: 2;
 }
 
-.search-text {
-    width: 630px;
-    height: 37px;
-    font-size: 20px;
+.search-button {
+    position: relative;
+    flex: 2;
 }
 
-.btn-search {
-    width: 90px;
+/* .search-button input#search {
     height: 40px;
-    position: absolute;
-    background-color: black;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 395px;
+} */
+.search-button input#search {
+    height: 38px;
+    width: 100%;
+    float: left;
+    padding: 0 100px 0 10px;
 }
 
 /* icon button */
-.login-icon {
+.user-icon {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 /* CSS cho danh sách ul */
@@ -87,9 +89,10 @@ body {
 
 
 /* menu - thanh điều hướng */
-.header-container{
+.header-container {
     background-color: black;
 }
+
 .header-container.sticky {
     position: fixed;
     top: 0;
