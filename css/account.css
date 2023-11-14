@@ -1,9 +1,12 @@
 .form-group {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 .btn-primary {
     color: #fff;
     background-color: black;
     font-weight: 600;
     width:100%;
+    display: block;
+  margin: 0 auto;
 }
+
