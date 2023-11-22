@@ -16,7 +16,6 @@ function updateSlider() {
     const slider = document.querySelector('.slider');
     slider.style.transform = `translateX(-${(currentSlide - 1) * 1300}px)`;
     const sliderPosition = document.getElementById('slider-position');
-    sliderPosition.textContent = `${currentSlide} / 3`;
 }
 
 // Tự động chuyển slide sau một khoảng thời gian
