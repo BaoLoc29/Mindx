@@ -1,5 +1,5 @@
 .product{
-    padding: 100px 0;
+    padding: 40px 0;
   
 }
 .product-top{
@@ -185,7 +185,8 @@
   width: 100%;
   display: block;
   margin-left: 20px;
-  background-color: #000;  
+  background-color: #000; 
+  cursor: pointer; 
 }
 
 .product-content-right-product-button{

@@ -183,13 +183,3 @@
 .olw-item:hover .product-button-hine{
     display: block;
 }
-/* 
-.btn-dark{
-    margin: 0 0 10px 0;
-    padding: 8px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-}
