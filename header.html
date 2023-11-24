@@ -23,18 +23,69 @@
                     <i class="fa fa-search"></i> Search
                 </button>
             </div>
-            <div class="user-icon">
+            <!-- <div class="user-icon">
                 <ul class="button-icon">
                     <li><a href="login.html"><i class="fas fa-right-to-bracket"></i>Đăng nhập</a></li>
                     <li><a href="register.html"><i class='fas fa-user'></i>Đăng kí</a></li>
                     <li><a href="#"><i class='fas fa-shopping-cart'></i>Giỏ hàng</a></li>
                 </ul>
+            </div> -->
+            <div class="widgets-wrap">
+                <div class="widget-header">
+                    <a id="loginButton" href="login.html" class="widget-view">
+                        <div class="icon-area">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <small class="text"> Đăng nhập </small>
+                    </a>
+                </div>
+
+                <div class="widget-header" id="userDropdown" style="display: none;">
+                    <div class="dropdown">
+                        <button class="widget-view" data-toggle="dropdown" style="background-color: white; border: none;">
+                            <div class="icon-area">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <small class="text"> Cá nhân </small>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="userDropdown">
+                            <a id="profileLink" href="#">
+                                <i class="fa fa-user"></i> Thông tin
+                            </a>
+
+                            <a id="historyButton" href="#">
+                                <i class="fa fa-clock"></i> Lịch sử
+                            </a>
+                            <a id="logoutButton" href="#">
+                                <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget-header">
+                    <a id="orderstatusLink" href="#" class="widget-view">
+                        <div class="icon-area">
+                            <i class="fa fa-store"></i>
+                        </div>
+                        <small class="text"> Đơn hàng </small>
+                    </a>
+                </div>
+
+                <div class="widget-header">
+                    <a id="cartLink" href="cart.html" class="widget-view">
+                        <div class="icon-area">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <small class="text"> Giỏ hàng </small>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="header-container">
             <ul class="main-menu">
                 <li><a href="#">Giới thiệu</a></li>
-                <li class="has-child"><a href="#">Áo</a><i class="fas fa-angle-down"
+                <li class="has-child"><a href="product_ao.html">Áo</a><i class="fas fa-angle-down"
                         style="color: rgb(160, 160, 160)"></i>
                     <ul class="sub-menu">
                         <li><a href="">Áo Polo</a></li>

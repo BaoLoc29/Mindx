@@ -1,572 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fashion - Thời trang nam chính hãng</title>
-    <link rel="stylesheet" href="css/home.css" />
-    <script src="js/scroll.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
-    <header id="header"></header>
-    <main>
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slide">
-            <img
-              src="img/banner/1.png"
-              alt="Image 1"
-              width="1300px"
-              height="500px"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="img/banner/2.png"
-              alt="Image 2"
-              width="1300px"
-              height="500px"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="img/banner/3.png"
-              alt="Image 3"
-              width="1300px"
-              height="500px"
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion - Thời trang nam chính hãng</title>
+  <link rel="stylesheet" href="css/home.css" />
+  <script src="js/scroll.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header id="header"></header>
+  <main>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="img/banner/1.png" alt="Image 1" width="1300px" height="500px" />
         </div>
-        <div id="prev-btn" class="slider-btn" onclick="prevSlide()">
-          <i
-            class="fas fa-angles-left"
-            style="color: #ffffff; font-size: 40px"
-          ></i>
+        <div class="slide">
+          <img src="img/banner/2.png" alt="Image 2" width="1300px" height="500px" />
         </div>
-        <div id="next-btn" class="slider-btn" onclick="nextSlide()">
-          <i
-            class="fas fa-angles-right"
-            style="color: #ffffff; font-size: 40px"
-          ></i>
+        <div class="slide">
+          <img src="img/banner/3.png" alt="Image 3" width="1300px" height="500px" />
         </div>
       </div>
-      <div class="home-policy">
-        <div class="grid-uniform">
-          <div class="grid__item">
-            <div class="policy-item">
-              <div class="policy-icon">
-                <i
-                  class="fas fa-truck-fast"
-                  style="color: #000000; font-size: 35px"
-                ></i>
-              </div>
-              <div class="policy-desc">
-                <span class="tit">Free Ship</span>
-                <p class="small--hide">Freeship đơn từ 500.000đ.</p>
-              </div>
+      <div id="prev-btn" class="slider-btn" onclick="prevSlide()">
+        <i class="fas fa-angles-left" style="color: #ffffff; font-size: 40px"></i>
+      </div>
+      <div id="next-btn" class="slider-btn" onclick="nextSlide()">
+        <i class="fas fa-angles-right" style="color: #ffffff; font-size: 40px"></i>
+      </div>
+    </div>
+    <div class="home-policy">
+      <div class="grid-uniform">
+        <div class="grid__item">
+          <div class="policy-item">
+            <div class="policy-icon">
+              <i class="fas fa-truck-fast" style="color: #000000; font-size: 35px"></i>
+            </div>
+            <div class="policy-desc">
+              <span class="tit">Free Ship</span>
+              <p class="small--hide">Freeship đơn từ 500.000đ.</p>
             </div>
           </div>
-          <div class="grid__item">
-            <div class="policy-item">
-              <div class="policy-icon">
-                <i
-                  class="fas fa-headset"
-                  style="color: #000000; font-size: 35px"
-                ></i>
-              </div>
-              <div class="policy-desc">
-                <span class="tit">Giao nhanh</span>
-                <p class="small--hide">Giao hàng toàn quốc 1-3 ngày.</p>
-              </div>
+        </div>
+        <div class="grid__item">
+          <div class="policy-item">
+            <div class="policy-icon">
+              <i class="fas fa-headset" style="color: #000000; font-size: 35px"></i>
+            </div>
+            <div class="policy-desc">
+              <span class="tit">Giao nhanh</span>
+              <p class="small--hide">Giao hàng toàn quốc 1-3 ngày.</p>
             </div>
           </div>
-          <div class="grid__item">
-            <div class="policy-item">
-              <div class="policy-icon">
-                <i
-                  class="fas fa-arrow-rotate-right"
-                  style="color: #000000; font-size: 35px"
-                ></i>
-              </div>
-              <div class="policy-desc">
-                <span class="tit">Hỗ trợ đổi trả</span>
-                <p class="small--hide">Đổi trả trong vòng 15 ngày.</p>
-              </div>
+        </div>
+        <div class="grid__item">
+          <div class="policy-item">
+            <div class="policy-icon">
+              <i class="fas fa-arrow-rotate-right" style="color: #000000; font-size: 35px"></i>
+            </div>
+            <div class="policy-desc">
+              <span class="tit">Hỗ trợ đổi trả</span>
+              <p class="small--hide">Đổi trả trong vòng 15 ngày.</p>
             </div>
           </div>
+        </div>
 
-          <div class="grid__item">
-            <div class="policy-item">
-              <div class="policy-icon">
-                <i
-                  class="fas fa-user-shield"
-                  style="color: #000000; font-size: 35px"
-                ></i>
-              </div>
-              <div class="policy-desc">
-                <span class="tit">Bảo mật</span>
-                <p class="small--hide">Bảo mật thông tin an toàn.</p>
-              </div>
+        <div class="grid__item">
+          <div class="policy-item">
+            <div class="policy-icon">
+              <i class="fas fa-user-shield" style="color: #000000; font-size: 35px"></i>
+            </div>
+            <div class="policy-desc">
+              <span class="tit">Bảo mật</span>
+              <p class="small--hide">Bảo mật thông tin an toàn.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="home-featured-product">
-        <div class="product-container" style="margin-bottom: 50px">
-          <div class="home-section-head">
-            <div class="title">
-              <h2>SẢN PHẨM MỚI</h2>
-            </div>
-            <div class="home-section-body">
-              <div class="new-product">
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="#"
-                        ><img
-                          src="img/product/ao-so-mi-den-dai-tay.png"
-                          alt="Áo sơ mi nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="#"
-                          ><span
-                            >Áo sơ mi nam công sở dài tay chất liệu Bamboo
-                            thoáng mát</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>550,000&#8363; - 650,000&#8363;</span>
-                      </div>
-                      <div class="product-button-hine">
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
-                    </div>
+    </div>
+    <div class="home-featured-product">
+      <div class="product-container" style="margin-bottom: 50px">
+        <div class="home-section-head">
+          <div class="title">
+            <h2>SẢN PHẨM MỚI</h2>
+          </div>
+          <div class="home-section-body">
+            <div class="new-product">
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="#"><img src="img/product/ao-so-mi-den-dai-tay.png" alt="Áo sơ mi nam" width="260"
+                        height="320" /></a>
                   </div>
-                </div>
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="#"
-                        ><img
-                          src="img/product/ao-so-mi-nam.png"
-                          alt="Áo sơ mi nam"
-                          width="260"
-                          height="320"
-                      /></a>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="#"><span>Áo sơ mi nam công sở dài tay chất liệu Bamboo
+                          thoáng mát</span></a>
                     </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="#"
-                          ><span
-                            >Áo sơ mi nam công sở dài tay chất liệu Bamboo
-                            thoáng mát</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>550,000&#8363; - 650,000&#8363;</span>
-                      </div>
-                      <div class="product-button-hine">
-                        <!-- <a href="#"><button class="btn btn-dark"><i class="fas fa-eye" aria-hidden="true"></i> Xem nhanh</button></a> -->
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
+                    <div class="product-price">
+                      <span>550,000&#8363; - 650,000&#8363;</span>
                     </div>
-                  </div>
-                </div>
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="#"
-                        ><img
-                          src="img/product/jean_ma_moi.png"
-                          alt="Áo sơ mi nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="#"
-                          ><span
-                            >Quần jean đen nam chất liệu Bamboo thoáng mát</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>550,000&#8363; - 650,000&#8363;</span>
-                      </div>
-                      <div class="product-button-hine">
-                        <!-- <a href="#"><button class="btn btn-dark"><i class="fas fa-eye" aria-hidden="true"></i> Xem nhanh</button></a> -->
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="#"
-                        ><img
-                          src="img/product/quan-the-thao.png"
-                          alt="Áo sơ mi nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="#"
-                          ><span
-                            >Quần thể thao nam chất liệu Bamboo thoáng mát</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>550,000&#8363; - 650,000&#8363;</span>
-                      </div>
-                      <div class="product-button-hine">
-                        <!-- <a href="#"><button class="btn btn-dark"><i class="fas fa-eye" aria-hidden="true"></i> Xem nhanh</button></a> -->
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
+                    <div class="product-button-hine">
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-container">
-          <div class="home-section-head">
-            <div class="title">
-              <h2>SẢN PHẨM TIÊU BIỂU</h2>
-            </div>
-            <div class="home-section-body">
-              <div class="new-product">
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="chitietsanpham.html"
-                        ><img
-                          src="img/details/ao-thun-nam_1.jpg"
-                          alt="Áo thun nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="chitietsanpham.html"
-                          ><span
-                            >Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
-                            Loose</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>520,000&#8363;</span>
-                      </div>
-                      <div class="product-button-hine">
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
-                    </div>
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="#"><img src="img/product/ao-so-mi-nam.png" alt="Áo sơ mi nam" width="260"
+                        height="320" /></a>
                   </div>
-                </div>
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="chitietsanpham.html"
-                        ><img
-                          src="img/details/ao-thun-nam_1.jpg"
-                          alt="Áo thun nam"
-                          width="260"
-                          height="320"
-                      /></a>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="#"><span>Áo sơ mi nam công sở dài tay chất liệu Bamboo
+                          thoáng mát</span></a>
                     </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="chitietsanpham.html"
-                          ><span
-                            >Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
-                            Loose</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>520,000&#8363;</span>
-                      </div>
-                      <div class="product-button-hine">
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
+                    <div class="product-price">
+                      <span>550,000&#8363; - 650,000&#8363;</span>
                     </div>
-                  </div>
-                </div>
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="chitietsanpham.html"
-                        ><img
-                          src="img/details/ao-thun-nam_1.jpg"
-                          alt="Áo thun nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="chitietsanpham.html"
-                          ><span
-                            >Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
-                            Loose</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>520,000&#8363;</span>
-                      </div>
-                      <div class="product-button-hine">
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="chitietsanpham.html"
-                        ><img
-                          src="img/details/ao-thun-nam_1.jpg"
-                          alt="Áo thun nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="chitietsanpham.html"
-                          ><span
-                            >Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
-                            Loose</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>520,000&#8363;</span>
-                      </div>
-                      <div class="product-button-hine">
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
+                    <div class="product-button-hine">
+                      <!-- <a href="#"><button class="btn btn-dark"><i class="fas fa-eye" aria-hidden="true"></i> Xem nhanh</button></a> -->
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-container" style="margin-bottom: 50px">
-          <div class="home-section-head">
-            <div class="title">
-              <h2>SẢN PHẨM KHUYẾN MÃI</h2>
-            </div>
-            <div class="home-section-body">
-              <div class="new-product">
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="chitietsanpham.html"
-                        ><img
-                          src="img/details/ao-thun-nam_1.jpg"
-                          alt="Áo thun nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                      <div class="product-tags">
-                        <span class="tag-sale">-50%</span>
-                      </div>
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="#"><img src="img/product/jean_ma_moi.png" alt="Áo sơ mi nam" width="260"
+                        height="320" /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="#"><span>Quần jean đen nam chất liệu Bamboo thoáng mát</span></a>
                     </div>
-
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="chitietsanpham.html"
-                          ><span
-                            >Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
-                            Loose</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>260,000&#8363; - <del>520,000&#8363;</del></span>
-                      </div>
-                      <div class="product-button-hine">
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
+                    <div class="product-price">
+                      <span>550,000&#8363; - 650,000&#8363;</span>
+                    </div>
+                    <div class="product-button-hine">
+                      <!-- <a href="#"><button class="btn btn-dark"><i class="fas fa-eye" aria-hidden="true"></i> Xem nhanh</button></a> -->
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
                     </div>
                   </div>
                 </div>
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="chitietsanpham.html"
-                        ><img
-                          src="img/details/ao-thun-nam_1.jpg"
-                          alt="Áo thun nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                      <div class="product-tags">
-                        <span class="tag-sale">-50%</span>
-                      </div>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="chitietsanpham.html"
-                          ><span
-                            >Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
-                            Loose</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>260,000&#8363; - <del>520,000&#8363;</del></span>
-                      </div>
-                      <div class="product-button-hine">
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
-                    </div>
+              </div>
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="#"><img src="img/product/quan-the-thao.png" alt="Áo sơ mi nam" width="260"
+                        height="320" /></a>
                   </div>
-                </div>
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="chitietsanpham.html"
-                        ><img
-                          src="img/details/ao-thun-nam_1.jpg"
-                          alt="Áo thun nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                      <div class="product-tags">
-                        <span class="tag-sale">-50%</span>
-                      </div>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="#"><span>Quần thể thao nam chất liệu Bamboo thoáng mát</span></a>
                     </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="chitietsanpham.html"
-                          ><span
-                            >Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
-                            Loose</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>260,000&#8363; - <del>520,000&#8363;</del></span>
-                      </div>
-                      <div class="product-button-hine">
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
+                    <div class="product-price">
+                      <span>550,000&#8363; - 650,000&#8363;</span>
                     </div>
-                  </div>
-                </div>
-                <div class="olw-item">
-                  <div class="new-product-item">
-                    <div class="product-img">
-                      <a href="chitietsanpham.html"
-                        ><img
-                          src="img/details/ao-thun-nam_1.jpg"
-                          alt="Áo thun nam"
-                          width="260"
-                          height="320"
-                      /></a>
-                      <div class="product-tags">
-                        <span class="tag-sale">-50%</span>
-                      </div>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-title">
-                        <a href="chitietsanpham.html"
-                          ><span
-                            >Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
-                            Loose</span
-                          ></a
-                        >
-                      </div>
-                      <div class="product-price">
-                        <span>260,000&#8363; - <del>520,000&#8363;</del></span>
-                      </div>
-                      <div class="product-button-hine">
-                        <a href="#"
-                          ><button class="btn btn-dark">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                            Thêm vào giỏ hàng
-                          </button></a
-                        >
-                      </div>
+                    <div class="product-button-hine">
+                      <!-- <a href="#"><button class="btn btn-dark"><i class="fas fa-eye" aria-hidden="true"></i> Xem nhanh</button></a> -->
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
                     </div>
                   </div>
                 </div>
@@ -575,15 +187,236 @@
           </div>
         </div>
       </div>
-
-      <div class="content">
-        <button id="scrollToTopBtn" onclick="scrollToTop()">
-          <i class="fas fa-arrow-up" style="color: black; font-size: 30px"></i>
-        </button>
+      <div class="product-container">
+        <div class="home-section-head">
+          <div class="title">
+            <h2>SẢN PHẨM TIÊU BIỂU</h2>
+          </div>
+          <div class="home-section-body">
+            <div class="new-product">
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="chitietsanpham.html"><img src="img/details/ao-thun-nam_1.jpg" alt="Áo thun nam" width="260"
+                        height="320" /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="chitietsanpham.html"><span>Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
+                          Loose</span></a>
+                    </div>
+                    <div class="product-price">
+                      <span>520,000&#8363;</span>
+                    </div>
+                    <div class="product-button-hine">
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="chitietsanpham.html"><img src="img/details/ao-thun-nam_1.jpg" alt="Áo thun nam" width="260"
+                        height="320" /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="chitietsanpham.html"><span>Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
+                          Loose</span></a>
+                    </div>
+                    <div class="product-price">
+                      <span>520,000&#8363;</span>
+                    </div>
+                    <div class="product-button-hine">
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="chitietsanpham.html"><img src="img/details/ao-thun-nam_1.jpg" alt="Áo thun nam" width="260"
+                        height="320" /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="chitietsanpham.html"><span>Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
+                          Loose</span></a>
+                    </div>
+                    <div class="product-price">
+                      <span>520,000&#8363;</span>
+                    </div>
+                    <div class="product-button-hine">
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="chitietsanpham.html"><img src="img/details/ao-thun-nam_1.jpg" alt="Áo thun nam" width="260"
+                        height="320" /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="chitietsanpham.html"><span>Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
+                          Loose</span></a>
+                    </div>
+                    <div class="product-price">
+                      <span>520,000&#8363;</span>
+                    </div>
+                    <div class="product-button-hine">
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <script src="js/slider.js"></script>
-    </main>
-    <footer id="footer"></footer>
-    <script src="js/loadhf.js"></script>
-  </body>
+      <div class="product-container" style="margin-bottom: 50px">
+        <div class="home-section-head">
+          <div class="title">
+            <h2>SẢN PHẨM KHUYẾN MÃI</h2>
+          </div>
+          <div class="home-section-body">
+            <div class="new-product">
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="chitietsanpham.html"><img src="img/details/ao-thun-nam_1.jpg" alt="Áo thun nam" width="260"
+                        height="320" /></a>
+                    <div class="product-tags">
+                      <span class="tag-sale">-50%</span>
+                    </div>
+                  </div>
+
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="chitietsanpham.html"><span>Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
+                          Loose</span></a>
+                    </div>
+                    <div class="product-price">
+                      <span>260,000&#8363; - <del>520,000&#8363;</del></span>
+                    </div>
+                    <div class="product-button-hine">
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="chitietsanpham.html"><img src="img/details/ao-thun-nam_1.jpg" alt="Áo thun nam" width="260"
+                        height="320" /></a>
+                    <div class="product-tags">
+                      <span class="tag-sale">-50%</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="chitietsanpham.html"><span>Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
+                          Loose</span></a>
+                    </div>
+                    <div class="product-price">
+                      <span>260,000&#8363; - <del>520,000&#8363;</del></span>
+                    </div>
+                    <div class="product-button-hine">
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="chitietsanpham.html"><img src="img/details/ao-thun-nam_1.jpg" alt="Áo thun nam" width="260"
+                        height="320" /></a>
+                    <div class="product-tags">
+                      <span class="tag-sale">-50%</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="chitietsanpham.html"><span>Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
+                          Loose</span></a>
+                    </div>
+                    <div class="product-price">
+                      <span>260,000&#8363; - <del>520,000&#8363;</del></span>
+                    </div>
+                    <div class="product-button-hine">
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="olw-item">
+                <div class="new-product-item">
+                  <div class="product-img">
+                    <a href="chitietsanpham.html"><img src="img/details/ao-thun-nam_1.jpg" alt="Áo thun nam" width="260"
+                        height="320" /></a>
+                    <div class="product-tags">
+                      <span class="tag-sale">-50%</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <a href="chitietsanpham.html"><span>Áo Thun Nam S.Café Thêu chữ Coffee Lovers Form
+                          Loose</span></a>
+                    </div>
+                    <div class="product-price">
+                      <span>260,000&#8363; - <del>520,000&#8363;</del></span>
+                    </div>
+                    <div class="product-button-hine">
+                      <a href="#"><button class="btn btn-dark">
+                          <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                          Thêm vào giỏ hàng
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up" style="color: black; font-size: 30px"></i>
+      </button>
+    </div>
+    <script src="js/slider.js"></script>
+  </main>
+  <footer id="footer"></footer>
+  <script src="js/loadhf.js"></script>
+</body>
+
 </html>

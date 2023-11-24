@@ -35,6 +35,29 @@ body {
     position: relative;
     flex: 2;
 }
+.widgets-wrap{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.icon-area{
+    font-size: 24px;
+}
+.widget-header{
+    margin: 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.widget-view{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.widget-view:hover {
+    color: black !important;
+}
 .timkiem{
     float: right;
     position: relative;
@@ -58,14 +81,13 @@ body {
 }
 
 /* icon button */
-.user-icon {
-    flex: 1;
+.user-none-login {
     display: flex;
     justify-content: center;
 }
 
 /* CSS cho danh sách ul */
-.button-icon {
+/* .button-icon {
     display: flex;
     list-style: none;
     margin: 0;
@@ -94,7 +116,7 @@ body {
 
 .button-icon li i {
     margin-bottom: 8px;
-}
+} */
 
 
 
@@ -194,3 +216,39 @@ body {
     padding: 20px 10px;
     cursor: pointer;
 }
+
+/* sự kiện đăng nhập thành công */
+.dropdown-menu {
+    transition: all 0.3s ease;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 150px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-menu a:hover i {
+    color: white;
+}
+/* .icon-group{
+    display: flex;
+    justify-content: space-between;
+} */
