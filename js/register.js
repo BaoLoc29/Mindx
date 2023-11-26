@@ -1,63 +1,59 @@
- function validateForm() {
-    // Kiểm tra tất cả các trường nhập liệu
-    var isValid = true;
+document.addEventListener("DOMContentLoaded", function () {
+  const registerForm = document.getElementById("registerForm");
 
-    // Kiểm tra 
-    function validateForm() {
-      var fullName = document.getElementById("fullName").value;
-      var email = document.getElementById("email").value;
-      var phone = document.getElementById("phone").value;
-      var password = document.getElementById("password").value;
-      var confirmPassword = document.getElementById("confirmPassword").value;
-  
-      if (fullName === '' || email === '' || phone === '' || password === '' || confirmPassword === '') {
-        alert("Vui lòng điền đầy đủ thông tin");
-        return false;
+  registerForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Lấy giá trị từ các trường input
+      const name = document.getElementById("name").value;
+      const phoneNumber = document.getElementById("sodth").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      // Kiểm tra điều kiện và hiển thị thông báo lỗi nếu cần
+      const notification = document.getElementById("notification");
+      notification.innerHTML = ""; // Đảm bảo thông báo trống trước khi kiểm tra
+
+      if (name.trim() === "" || (/[a-zA-Z0-9]/.test(name))) {
+          displayError("Họ và tên không được để trống và không được là chứa ký tự và số!");
+          return;
       }
-      
-      // Kiểm tra họ tên không chứa ký tự đặc biệt và chữ số
-      var nameFormat = /^[^\d\s!@#$%^&*()_+={}|<>?`~\[\]\\;:'",./]+$/;
-      if (!nameFormat.test(fullName)) {
-        alert("Họ tên không được chứa ký tự đặc biệt và số");
-        return false;
+
+      if (phoneNumber.trim() === "" || !(/^\d+$/.test(phoneNumber))) {
+          displayError("Số điện thoại chỉ được nhập trường chữ số và không được để trống!");
+          return;
       }
-  
-      var emailFormat = /\S+@\S+\.\S+/;
-      if (!emailFormat.test(email)) {
-        alert("Vui lòng nhập email hợp lệ");
-        return false;
+
+      if (!isValidEmail(email)) {
+          displayError("Email không hợp lệ!");
+          return;
       }
-  
-      if (password.length < 8) {
-        alert("Mật khẩu cần ít nhất 8 ký tự");
-        return false;
+
+      if (password.length < 4 || password.trim() === "") {
+          displayError("Mật khẩu phải có ít nhất 4 ký tự và không được để trống!");
+          return;
       }
-  
+
       if (password !== confirmPassword) {
-        alert("Mật khẩu nhập lại không khớp");
-        return false;
+          displayError("Mật khẩu nhập lại không khớp!");
+          return;
       }
-  
-      var phoneFormat = /^\d{10,}$/;
-      if (!phoneFormat.test(phone)) {
-        alert("Vui lòng nhập số điện thoại hợp lệ");
-        return false;
-      }
-  
-      return true;
-    }
 
-    // Kiểm tra email và các trường khác tương tự
+      registerForm.submit();
+  });
 
-    // Kiểm tra tất cả các trường nhập liệu có hợp lệ không
-    if (isValid) {
-      // Nếu hợp lệ, hiển thị thông báo đăng ký thành công
-      var successMessage = document.createElement("p");
-      successMessage.textContent = "Đăng ký thành công!";
-      successMessage.style.color = "green";
-    } else {
-      // Nếu có lỗi, hiển thị thông báo lỗi và ngăn form được submit
-      alert("Vui lòng điền thông tin đầy đủ và chính xác.");
-      return false;
-    }
+  function displayError(message) {
+      const errorDiv = document.createElement("div");
+      errorDiv.classList.add("alert", "alert-danger");
+      errorDiv.textContent = message;
+      notification.appendChild(errorDiv);
+      errorDiv.style.textAlign="center";
+      errorDiv.style.color = "red";
   }
+
+  function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+  }
+});
