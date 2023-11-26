@@ -35,6 +35,16 @@ body {
     position: relative;
     flex: 2;
 }
+.timkiem{
+    float: right;
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 102px;
+    height: 38px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
 /* .search-button input#search {
     height: 40px;
@@ -48,8 +58,7 @@ body {
 }
 
 /* icon button */
-.user-icon {
-    flex: 1;
+.user-none-login {
     display: flex;
     justify-content: center;
 }
@@ -184,3 +193,39 @@ body {
     padding: 20px 10px;
     cursor: pointer;
 }
+
+/* sự kiện đăng nhập thành công */
+.dropdown-menu {
+    transition: all 0.3s ease;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 150px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-menu a:hover i {
+    color: white;
+}
+/* .icon-group{
+    display: flex;
+    justify-content: space-between;
+} */

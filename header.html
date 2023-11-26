@@ -7,8 +7,7 @@
     <title>Fashion - Thời trang nam chính hãng</title>
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -16,26 +15,53 @@
         <div class="header">
             <div class="logo">
                 <h1 style="display: none;">MenFashion shop quần áo nam chính hãng</h1>
-                <a href="#"><img src="img/menfashion_logo.png" alt="logo_fashion" class="logo_fashion"></a>
+                <a href="index.html"><img src="img/menfashion_logo.png" alt="logo_fashion" class="logo_fashion"></a>
             </div>
             <div class="search-button">
                 <input type="search" id="search" placeholder="Nhập từ khóa tìm kiếm..." style="position: absolute;">
-                <button class="btn btn-dark" type="submit" fdprocessedid="hbmfxh" style="float: right; position: relative; border-radius: 0;">
+                <button class="timkiem" type="submit" fdprocessedid="hbmfxh">
                     <i class="fa fa-search"></i> Search
                 </button>
             </div>
             <div class="user-icon">
                 <ul class="button-icon">
-                    <li><a href="#"><i class="fas fa-right-to-bracket"></i>Đăng nhập</a></li>
-                    <li><a href="#"><i class='fas fa-user'></i>Đăng kí</a></li>
+                    <li><a href="login.html"><i class="fas fa-right-to-bracket"></i>Đăng nhập</a></li>
+                    <li><a href="register.html"><i class='fas fa-user'></i>Đăng kí</a></li>
                     <li><a href="#"><i class='fas fa-shopping-cart'></i>Giỏ hàng</a></li>
                 </ul>
             </div>
+            <!-- <div class="dropdown">
+                <button id="userDropdown" class="widget-view" data-toggle="dropdown"
+                    style="background-color: white; border: none;">
+                    <div class="icon-area">
+                        <i class="fas fa-user" style="font-size: 25px;"></i>
+                    </div>
+                    <small class="text"> Cá nhân </small>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                    <li>
+                        <a id="profileLink" href="ProfilePage.html">
+                            <i class="fas fa-user"></i> Thông tin
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="historyButton" href="order_history.html">
+                            <i class="fas fa-clock"></i> Lịch sử
+                        </a>
+                    </li>
+                    <li>
+                        <a id="logoutButton" href="#">
+                            <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
         </div>
         <div class="header-container">
             <ul class="main-menu">
                 <li><a href="#">Giới thiệu</a></li>
-                <li class="has-child"><a href="#">Áo</a><i class="fas fa-angle-down"
+                <li class="has-child"><a href="product_ao.html">Áo</a><i class="fas fa-angle-down"
                         style="color: rgb(160, 160, 160)"></i>
                     <ul class="sub-menu">
                         <li><a href="">Áo Polo</a></li>

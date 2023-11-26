@@ -106,8 +106,8 @@
     font-weight: bold;
     text-align: center;
     margin: 30px auto;
-    border-bottom: 1px solid black;
-    width: 250px;
+    border-bottom: 3px solid black;
+    width: 400px;
 }
 .olw-item{
     background-color: white;
@@ -130,6 +130,28 @@
     text-align: center;
     font-size: 19px;
 }
+/* khuyến mãi */
+.product-img {
+    position: relative;
+    overflow: hidden;
+}
+.product-tags {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.tag-sale{
+    font-weight: bold;
+}
+.product-tags > span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background: red;
+}
 .product-title a{
     color: black;
     text-decoration: none;
@@ -146,30 +168,18 @@
 .product-price{
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 18px;
     font-weight: bold;
 }
 .product-button-hine{
     text-align: center;
+    margin-bottom: 20px;
 }
 .new-product{
     display: flex;
     justify-content: space-around;
 }
-.olw-item .product-button-hine{
-    display: block
-}
 .olw-item:hover .product-button-hine{
     display: block;
-}
-/* 
-.btn-dark{
-    margin: 0 0 10px 0;
-    padding: 8px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
 }

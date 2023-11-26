@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi tiết sản phẩm</title>
-    <link rel="stylesheet" href="/Mindx/css/product.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
 </head>
-
 <body>
-    <section class="product">
-        <div class="container">
-            <div class="product-top">
-                <P>Trang chủ</P> <span>&#10230;</span>
-                <p>Nữ</p> <span>&#10230;</span>
-                <p>Hàng nữ mới về</p>
-                <P>Áo thun cổ tròn MS</P>
-            </div>
+    <header id="header"></header>
+    <main>
+        <section class="product">
             <div class="product-content">
                 <div class="product-content-left">
                     <div class="product-content-left-big-img">
-                        <div class="product-content-left-small-img">
-                            <img class="small-img" src="/Mindx/img/details/ao-thun-nam_1.jpg" alt="Không tìm thấy hình ảnh">
-                            <img class="small-img" src="/Mindx/img/details/ao-thun-nam_2.jpg" alt="Không tìm thấy hình ảnh">
-                            <img class="small-img" src="/Mindx/img/details/ao-thun-nam_3.jpg" alt="Không tìm thấy hình ảnh">
-                            <img class="small-img" src="/Mindx/img/details/ao-thun-nam_4.jpg" alt="Không tìm thấy hình ảnh">
+                        <div class="product-content-left-bigx-img">
+                            <img id="productImgBig" src="img/details/ao-thun-nam_1.jpg" alt="Không tìm thấy hình ảnh">
+                            <img class="small-img" src="img/details/ao-thun-nam_1.jpg" alt="Không tìm thấy hình ảnh"
+                                onclick="showImg(this.src)">
+                            <img class="small-img" src="img/details/ao-thun-nam_2.jpg" alt="Không tìm thấy hình ảnh"
+                                onclick="showImg(this.src)">
+                            <img class="small-img" src="img/details/ao-thun-nam_3.jpg" alt="Không tìm thấy hình ảnh"
+                                onclick="showImg(this.src)">
+                            <img class="small-img" src="img/details/ao-thun-nam_4.jpg" alt="Không tìm thấy hình ảnh"
+                                onclick="showImg(this.src)">
                         </div>
                     </div>
                     <div class="product-content-left-small-img">
-                        <img src="/Mindx/img/details/ao-thun-nam_1.jpg" alt="Không tìm thấy hình ảnh">
+                        <img src="img/details/ao-thun-nam-10f23tss062-black-beauty-_1__1_jpg.webp"
+                            alt="Không tìm thấy hình ảnh">
                     </div>
                 </div>
                 <div class="product-content-right">
@@ -48,11 +47,12 @@
                     <div class="product-content-right-product-color">
                         <p><span>Chọn màu sắc</span>:<b style="margin-left: 20px;">BLACK BEAUTY</b></p>
                         <div class="product-content-right-product-color-img">
-                            <img src="/img/details/ao-thun-nam_black-beauty_3__1.jpg">
-                            <img src="/img/details/ao-thun-nambright-white_3__1.jpg">
-                            <img src="/img/details/ao-thun-namburnt-henna_3__2.jpg">
-                            <img src="/img/details/ao-thun-nam_rainy-day-_3__1.jpg">
+                            <img src="img/details/ao-thun-nam_black-beauty_3__1.jpg">
+                            <img src="img/details/ao-thun-nam_rainy-day-_3__1.jpg" >
+                            <img src="img/details/ao-thun-nambright-white_3__1.jpg" >
+                            <img src="img/details/ao-thun-namburnt-henna_3__2.jpg" >
                         </div>
+                        
                         <P>Chọn size:</P>
                     </div>
                     <div class="product-content-right-product-size">
@@ -88,14 +88,14 @@
                         <p><span>Chọn số lượng</span>:<b style="margin-left: 20px;">1</b></p>
                         <div class="quantity-container">
                             <div class="quantity-minus">
-                            <button class="quantity-button decrease">-</button>
-                            <input class="quantity-input" type="text" value="1">
-                            <button class="quantity-button increase">+</button>
+                                <button class="quantity-button decrease">-</button>
+                                <input class="quantity-input" type="text" value="1">
+                                <button class="quantity-button increase">+</button>
                             </div>
-                            
+
                             <button id="buy-button">Mua ngay</button>
                             <div class="input-container">
-                                <input id ="heart" type="radio" name="heart">
+                                <input id="heart" type="radio" name="heart">
                                 <div class="radio-title">
                                     <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
                                 </div>
@@ -103,14 +103,91 @@
 
                         </div>
                     </div>
-                    
+                    <div class="product-info-bottom">
+                        <ul class="product-info-feature">
+                            <li>
+                                <div class="icon">
+                                    <img src="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/ghn.png" data-amsrc="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/ghn.png" alt="Giao hàng nhanh" data-loaded="true">
+                                </div>
+                                <div class="text">
+                                    <strong>Giao hàng nhanh</strong>
+                                    <p>Từ 2-5 ngày</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/free.png" data-amsrc="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/free.png" alt="Freeship toàn quốc từ 399k" data-loaded="true">
+                                </div>
+                                <div class="text">
+                                    <strong>Miễn phí vận chuyển</strong>
+                                    <p>Đơn hàng từ 399k</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/order.png" data-amsrc="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/order.png" alt="Theo dõi đơn hàng dễ dàng" data-loaded="true">
+                                </div>
+                                <div class="text">
+                                    <strong>Theo dõi đơn hàng
+                                        <br>
+                                        một cách dễ dàng
+                                    </strong>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/returns.png" data-amsrc="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/returns.png" alt="Đổi trả tận nơi" data-loaded="true">
+                                </div>
+                                <div class="text">
+                                    <strong>Đổi trả linh hoạt</strong>
+                                    <p>Với sản phẩm không áp dụng khuyến mãi</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/pay.png" data-amsrc="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/pay.png" alt="Thanh toán dễ dàng" data-loaded="true">
+                                </div>
+                                <div class="text">
+                                    <strong>Thanh toán dễ dàng
+                                        <br>
+                                        nhiều hình thức 
+                                    </strong>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/hotline.png" data-amsrc="https://routine.vn/static/version1700475310/frontend/Magenest/routine/vi_VN/images/hotline.png" alt="Hotline hỗ trợ Routine" data-loaded="true">
+                                </div>
+                                <div class="text">
+                                    <strong>Hotline hỗ trợ</strong>
+                                    <p style="font-weight: bold;">039 9999 365</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="js/loadhf.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="/js/product.js"></script>
+    <script src="js/product.js"></script>
+    <script>
+        function showImg(src) {
+            let productImgBig = document.querySelector('.product-content-left-bigx-img img');
+            let productImgSmall = document.querySelector('.product-content-left-small-img img');
+            let productDiv = document.querySelector('.product-content-left-bigx-img');
+            productImgBig.src = src;
+            productImgSmall.src = src;
+            productDiv.style.border = `1px solid url(${src})`;
+        }
+    </script>
 </body>
 
 </html>
