@@ -43,22 +43,26 @@
     </main>
     <footer id="footer"></footer>
     <script src="js/loadhf.js"></script>
-
     <script>
+        // Hàm kiểm tra đăng nhập
         var email = "sinhvien@gmail.com";
-        var password = "Sinhvien@123"
+        var password = "Sinhvien@123";
         function checkLogin(inputEmail, inputPassword) {
             if (inputEmail === email && inputPassword === password) {
                 alert("Đăng nhập thành công");
                 window.location.href = "index.html";
-                localStorage.setItem("loggedIn", "true"); // Lưu trạng thái đăng nhập vào localStorage
-                return true;
+                localStorage.setItem("email", inputEmail);
+                localStorage.setItem("password", inputPassword);
+                var loginButton = document.getElementById("loginButton");
+                var userDropdown = document.getElementById("userDropdown");
+                loginButton.style.display = "none";
+                userDropdown.style.display = "block";
             } else {
                 alert("Tên đăng nhập hoặc mật khẩu không chính xác");
-                return false;
             }
         }
 
+        // Thêm sự kiện đăng nhập
         document
             .querySelector("#loginForm")
             .addEventListener("submit", function (e) {
