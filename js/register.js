@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const notification = document.getElementById("notification");
       notification.innerHTML = ""; // Đảm bảo thông báo trống trước khi kiểm tra
 
-      if (name.trim() === "" || (/[a-zA-Z0-9]/.test(name))) {
+      if (name.trim() === "" || !(/[a-zA-Z0-9]/.test(name))) {
           displayError("Họ và tên không được để trống và không được là chứa ký tự và số!");
           return;
       }
