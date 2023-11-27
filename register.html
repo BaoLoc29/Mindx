@@ -1,180 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-      z
-    />
-    <link rel="stylesheet" href="css/account.css" />
-  </head>
 
-  <body>
-    <header id="header"></header>
-    <main>
-      <div class="card mx-auto" style="max-width: 640px; margin-top: 40px">
-        <article class="card-body">
-          <header class="mb-4" style="text-align: center">
-            <h2 class="card-title">Đăng ký</h2>
-          </header>
-          <form id="registerForm">
-            <div id="notification"></div>
-            <div class="form-row">
-              <div class="col form-group">
-                <label class="label" for="firstname" style="font-weight: bold"
-                  ><span
-                    >Họ và tên
-                    <span class="color-require" style="color: #ff6a00"
-                      >*</span
-                    ></span
-                  ></label
-                >
-                <input
-                  id="name"
-                  type="text"
-                  class="form-control"
-                  placeholder=""
-                  name="name"
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="label" for="phone_number" style="font-weight: bold"
-                ><span
-                  >Số điện thoại
-                  <span class="color-require" style="color: #ff6a00"
-                    >*</span
-                  ></span
-                ></label
-              >
-              <input
-                id="sodth"
-                type="Phone"
-                class="form-control"
-                placeholder=""
-                name="mobile_num"
-              />
-              <small class="form-text text-muted"
-                >Chúng tôi sẽ không bao giờ cung cấp thông tin của bạn cho bên
-                thứ ba.</small
-              >
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/account.css" />
+</head>
 
-            <div class="form-group">
-              <label class="label" for="email_address" style="font-weight: bold"
-                ><span
-                  >Email
-                  <span class="color-require" style="color: #ff6a00"
-                    >*</span
-                  ></span
-                ></label
-              >
-              <input
-                id="email"
-                type="email"
-                class="form-control"
-                placeholder=""
-                name="email"
-              />
-              <small class="form-text text-muted"
-                >Hóa đơn VAT khi mua hàng sẽ được gửi qua email này.</small
-              >
+<body>
+  <header id="header"></header>
+  <main>
+    <div class="card mx-auto" style="max-width: 640px; margin-top: 40px">
+      <article class="card-body">
+        <header class="mb-4" style="text-align: center">
+          <h2 class="card-title">Đăng ký</h2>
+        </header>
+        <form id="registerForm">
+          <div id="notification"></div>
+          <div class="form-row">
+            <div class="col form-group">
+              <label class="label" for="firstname" style="font-weight: bold"><span>Họ và tên
+                  <span class="color-require" style="color: #ff6a00">*</span></span></label>
+              <input id="name" type="text" class="form-control" placeholder="" name="name" />
             </div>
-            <div class="form-group">
-              <label class="label" for="password" style="font-weight: bold"
-                ><span
-                  >Nhập mật khẩu
-                  <span class="color-require" style="color: #ff6a00"
-                    >*</span
-                  ></span
-                ></label
-              >
-              <input
-                id="password"
-                class="form-control"
-                type="password"
-                name="password"
-              />
-            </div>
-            <div class="form-group">
-              <label class="label" for="password" style="font-weight: bold"
-                ><span
-                  >Nhập lại mật khẩu
-                  <span class="color-require" style="color: #ff6a00"
-                    >*</span
-                  ></span
-                ></label
-              >
-              <input
-                id="confirmPassword"
-                class="form-control"
-                type="password"
-                name="confirmPassword"
-              />
-              <small class="form-text text-muted"
-                >Mật khẩu phải nhiều hơn 8 ký tự, ít nhất 1 chữ thường 1 chữ in
-                hoa, 1 chữ số, 1 ký tự đặc biệt.</small
-              >
-            </div>
-            <div
-              class="form-group"
-              style="
+          </div>
+          <div class="form-group">
+            <label class="label" for="phone_number" style="font-weight: bold"><span>Số điện thoại
+                <span class="color-require" style="color: #ff6a00">*</span></span></label>
+            <input id="sodth" type="Phone" class="form-control" placeholder="" name="mobile_num" />
+            <small class="form-text text-muted">Chúng tôi sẽ không bao giờ cung cấp thông tin của bạn cho bên
+              thứ ba.</small>
+          </div>
+
+          <div class="form-group">
+            <label class="label" for="email_address" style="font-weight: bold"><span>Email
+                <span class="color-require" style="color: #ff6a00">*</span></span></label>
+            <input id="email" type="email" class="form-control" placeholder="" name="email" />
+            <small class="form-text text-muted">Hóa đơn VAT khi mua hàng sẽ được gửi qua email này.</small>
+          </div>
+          <div class="form-group">
+            <label class="label" for="password" style="font-weight: bold"><span>Nhập mật khẩu
+                <span class="color-require" style="color: #ff6a00">*</span></span></label>
+            <input id="password" class="form-control" type="password" name="password" />
+          </div>
+          <div class="form-group">
+            <label class="label" for="password" style="font-weight: bold"><span>Nhập lại mật khẩu
+                <span class="color-require" style="color: #ff6a00">*</span></span></label>
+            <input id="confirmPassword" class="form-control" type="password" name="confirmPassword" />
+            <small class="form-text text-muted">Mật khẩu phải nhiều hơn 8 ký tự, ít nhất 1 chữ thường 1 chữ in
+              hoa, 1 chữ số, 1 ký tự đặc biệt.</small>
+          </div>
+          <div class="form-group" style="
                 display: flex;
                 align-items: center;
                 justify-content: center;
-              "
-            >
-              <button
-                id="dangki-btn"
-                type="submit"
-                class="btn btn-primary btn-block"
-                value="Submit"
-              >
-                Đăng ký
-              </button>
-            </div>
-            <div class="form-group">
-              <label
-                class="custom-control custom-checkbox"
-                style="display: flex; align-items: center"
-              >
-                <input type="checkbox" class="custom-control-input" />
-                <div class="custom-control-label">
-                  Tôi đồng ý với các điều khoản bảo mật cá nhân
-                  <a href="#" style="color: black; font-weight: bold"
-                    >các điều khoản bảo mật cá nhân</a
-                  >
-                </div>
-              </label>
-            </div>
-          </form>
-        </article>
-      </div>
-      <p class="text-center mt-4">
-        Bạn đã có tài khoản?
-        <a href="login.html" style="color: black" id="dangnhap-btn"
-          ><b>Đăng nhập</b></a
-        >
-      </p>
-      <br /><br />
-    </main>
-    <footer id="footer"></footer>
-    <script src="js/loadhf.js"></script>
-    <script src="js/register.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+              ">
+            <button id="dangki-btn" type="submit" class="btn btn-primary btn-block" value="Submit">
+              Đăng ký
+            </button>
+          </div>
+          <div class="form-group">
+            <label class="custom-control custom-checkbox" style="display: flex; align-items: center">
+              <input type="checkbox" class="custom-control-input" />
+              <div class="custom-control-label">
+                Tôi đồng ý với các điều khoản bảo mật cá nhân
+                <a href="#" style="color: black; font-weight: bold">các điều khoản bảo mật cá nhân</a>
+              </div>
+            </label>
+          </div>
+        </form>
+      </article>
+    </div>
+    <p class="text-center mt-4">
+      Bạn đã có tài khoản?
+      <a href="login.html" style="color: black" id="dangnhap-btn"><b>Đăng nhập</b></a>
+    </p>
+    <br /><br />
+  </main>
+  <footer id="footer"></footer>
+  <script src="js/loadhf.js"></script>
+  <script src="js/register.js"></script>
+</body>
+
 </html>

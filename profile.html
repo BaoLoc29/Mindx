@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thông tin chi tiết của người dùng</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" z />
+  <link rel="stylesheet" href="css/account.css" />
+</head>
+
+<body>
+  <header id="header"></header>
+  <main>
+    <div class="card mx-auto" style="max-width: 640px; margin: 40px 0">
+      <article class="card-body">
+        <h2 class="card-title" style="text-align: center;"><b>Thông tin người dùng</b></h2>
+        <form id="registerForm">
+          <div class="form-row">
+            <div class="col form-group">
+              <label class="label" for="firstname" style="font-weight: bold"><span>Họ và tên</label>
+              <input id="name" type="text" class="form-control" name="name" disabled />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="label" for="phone_number" style="font-weight: bold"><span>Số điện thoại</label>
+            <input id="phone_number" type="Phone" class="form-control" name="mobile_num" disabled/>
+          </div>
+
+          <div class="form-group">
+            <label class="label" for="email_address" style="font-weight: bold"><span>Email</label>
+            <input id="email" type="email" class="form-control" name="email" disabled/>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-dark">Chỉnh sửa</button>
+          </div>
+        </form>
+      </article>
+    </div>
+    
+  </main>
+  <footer id="footer"></footer>
+  <script src="js/loadhf.js"></script>
+  <script>
+    let userprofile = {name: "Nguyễn Văn A", phone_number: "0346247541", email: "sinhvien@gmail.com"}
+    document.getElementById("name").value = userprofile.name;
+    document.getElementById("phone_number").value = userprofile.phone_number;
+    document.getElementById("email").value = userprofile.email;
+  </script>
+</body>
+
+</html>
