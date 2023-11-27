@@ -1,10 +1,16 @@
+a{
+    color: black;
+}
+p{
+    margin: 0 !important;
+}
 .cart{
-    padding: 100px 0;
+    padding: 0 50px;
+    margin-bottom: 50px;
 }
 .cart-top-wrap{
     display: flex;
     justify-content: center;
-
 }
 .cart-content-row {
     display: flex;
@@ -13,10 +19,10 @@
 .cart-top{
     height: 2px;
     width: 80%;
-    background-color: aliceblue;
+    background-color: rgb(223, 223, 223);
     display: flex;
     align-items: center;
-    margin: 50px 0 100px;
+    margin: 70px 0;
     justify-content: space-between;
 }
 .cart-top-item{
@@ -30,13 +36,14 @@
     background-color: whitesmoke;
 }
 .cart-top-item i{
-    color: #dddddd;
+    color: #b3b3b3;
 }
 .cart-top-cart{
-    border: 3px solid #0DB7EA;
+    border: 4px solid black;
 }
 .cart-top-cart i{
-    color:#0DB7EA ;
+    color: black;
+    font-size: 20px;
 }
 .cart-content-left{
     flex: 2;
@@ -48,20 +55,18 @@
 }
 .cart-content-left table th{
     padding-bottom: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     color:black;
     border-collapse: collapse;
     border-bottom: 2px solid #dddddd;
 }
 .cart-content-left table p{
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     color:black;
 }
 .cart-content-left table input{
-    width: 30px;
+    width: 40px;
 }
 .cart-content-left table span{
     display: block;
@@ -95,15 +100,13 @@
 }
 .cart-content-right th{
     padding-bottom: 30px;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     color:black;
     border-collapse: collapse;
     border-bottom: 2px solid #dddddd;
 }
 .cart-content-right td{
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     color:black;
     padding: 6px 0;
 }
@@ -151,11 +154,15 @@
 }
 .cart-content-right-login{
     margin-top: 20px;
+    text-align: center;
 }
 .cart-content-right-login p{
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     color:black;
     font-weight: bold;
-
+}
+.delete-cart{
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }

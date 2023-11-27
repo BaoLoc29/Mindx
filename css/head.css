@@ -219,6 +219,7 @@ body {
 
 /* sự kiện đăng nhập thành công */
 .dropdown-menu {
+    position: absolute;
     transition: all 0.3s ease;
     padding: 0 !important;
     margin: 0 !important;
